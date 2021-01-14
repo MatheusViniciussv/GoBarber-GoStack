@@ -1,9 +1,9 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
 
 import User from './User';
 
 @Entity('appointments')
-class Appoitment {
+class Appointment {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -20,8 +20,8 @@ class Appoitment {
   @CreateDateColumn()
   created_at: Date;
 
-  @CreateDateColumn()
+  @UpdateDateColumn()
   updated_at: Date;
-};
+}
 
-export default Appoitment;
+export default Appointment;
