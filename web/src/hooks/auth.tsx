@@ -4,7 +4,7 @@ import api from '../services/api';
 
 interface AuthState {
   token: string;
-  user: any;
+  user: SignInCredentials;
 }
 
 interface SignInCredentials {
@@ -13,7 +13,7 @@ interface SignInCredentials {
 }
 
 interface AuthContextData {
-  user: any;
+  user: SignInCredentials;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
 }
