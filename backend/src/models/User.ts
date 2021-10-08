@@ -1,7 +1,13 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('users')
-class Appoitment {
+class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -22,6 +28,6 @@ class Appoitment {
 
   @UpdateDateColumn()
   updated_at: Date;
-};
+}
 
-export default Appoitment;
+export default User;
