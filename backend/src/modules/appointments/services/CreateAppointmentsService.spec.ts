@@ -1,3 +1,7 @@
-test('sum two numbers', () => {
-  expect(1 + 4).toBe(5);
+import CreateAppointmentService from './CreateAppointmentService';
+
+describe('CreateAppointment', () => {
+  it('should be able to create a new Appointment', () => {
+    expect()
+  });
 });
