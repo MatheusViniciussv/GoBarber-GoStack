@@ -1,4 +1,3 @@
-// import AppError from '@shared/errors/AppError';
 import AppError from '@shared/errors/AppError';
 import FakeHashProvider from '../providers/HashProvider/fake/FakeHashProvider';
 import FakeUserRepository from '../repositories/fake/FakeUserRepository';
