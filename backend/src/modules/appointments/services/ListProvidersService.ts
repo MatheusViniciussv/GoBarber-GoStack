@@ -28,6 +28,8 @@ class ListProviderService {
         except_user_id: user_id,
       });
 
+      console.log('opa');
+
       await this.cachProvider.save(`providers-list:${user_id}`, users);
     }
 
